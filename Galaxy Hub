@@ -1,10 +1,1 @@
-local HttpService = game:GetService("HttpService")
-local PlaceId = game.PlaceId
 
-local Games = loadstring(game:HttpGet("https://protected-roblox-scripts.onrender.com/b98196484253822fb5e6e7e2c5f94d27"))()
-
-if Games[PlaceId] then
-    loadstring(game:HttpGet(Games[PlaceId]))()
-else
-    warn("No hay script disponible para este juego.")
-end
